@@ -20,7 +20,7 @@ const FormField = (props) => {
       <div className='flex items-center gap-2 mb-2'>
         <label
           htmlFor={name}
-          className="block text-sm font-medium text-gray-900"
+          className="block text-sm font-medium text-[#d3d3d4]"
         >
           {t(labelName)}
         </label>
@@ -42,7 +42,7 @@ const FormField = (props) => {
         value={value}
         onChange={handleChange}
         required
-        className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#4649f] focus:border-[#4649ff] outline-none block w-full p-3'
+        className='bg-[#252427] border border-[#808080] text-[#d3d3d4] text-sm rounded-lg focus:ring-[#4649f] focus:border-[#ffa31a] outline-none block w-full p-3'
       />
     </div>
   )

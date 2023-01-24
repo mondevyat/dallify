@@ -21,11 +21,11 @@ const Card = (props) => {
         src={photo}
         alt={prompt}
       />
-      <div className='group-hover:flex flex-col max-h-[94.5%] hidden absolute bottom-0 left-0 right-0 bg-[#10131f] m-2 p-4 rounded-md'>
+      <div className='group-hover:flex flex-col max-h-[94.5%] hidden absolute bottom-0 left-0 right-0 bg-[#1b1b1b] m-2 p-4 rounded-md'>
         <p className="text-white text-md overflow-y-auto prompt">{prompt}</p>
         <div className='mt-5 flex justify-between items-center gap-2'>
           <div className='flex items-center gap-2'>
-            <div className='w-7 h-7 rounded-full object-cover bg-yellow-600 flex justify-center items-center text-white text-xs font-bold select-none'>
+            <div className='w-7 h-7 rounded-full object-cover bg-[#ffa31a] flex justify-center items-center text-[#1b1b1b] text-xs font-extrabold select-none'>
               {name[0]}
             </div>
             <p className="text-white text-sm">{name}</p>

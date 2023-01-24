@@ -9,7 +9,7 @@ const RenderCards = ({ data, title }) => {
   }
 
   return (
-    <h2 className='mt-5 font-bold text-[#6469ff] text-xl uppercase'>
+    <h2 className='mt-5 font-bold text-[#ffa31a] text-xl uppercase'>
       {title}
     </h2>
   )
@@ -29,7 +29,7 @@ const Home = (props) => {
       setLoading(true);
 
       try {
-        const response = await fetch('http://localhost:8080/api/v1/post', {
+        const response = await fetch('https://dallify.onrender.com/api/v1/post', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -71,8 +71,8 @@ const Home = (props) => {
   return (
     <section className="max-w-7xl mx-auto">
       <div>
-        <h1 className="font-extrabold tex-[#222328] text-[32px]">{t('community_showcase')}</h1>
-        <p className="mt-2 text-[#666e75] text-[16px] max-w[500px]">{t('browse_through_collection')}</p>
+        <h1 className="font-extrabold text-[#d3d3d4] text-[32px]">{t('community_showcase')}</h1>
+        <p className="mt-2 text-[#d3d3d4] text-[16px] max-w[500px]">{t('browse_through_collection')}</p>
       </div>
 
       <div className="mt-16">
@@ -96,7 +96,7 @@ const Home = (props) => {
             {searchText && (
               <h2 className="font-medium text-[#666e75] text-xl mb-3">
                 {t('results_for')}
-                <span className="text-[#222328]">&nbsp;{searchText}</span>
+                <span className="text-[#d3d3d4]">&nbsp;{searchText}</span>
               </h2>
             )}
 
